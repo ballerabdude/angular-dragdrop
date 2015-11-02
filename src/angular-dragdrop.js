@@ -97,7 +97,7 @@ var jqyoui = angular.module('ngDragDrop', []).service('ngDragDropService', ['$ti
 
       // If it is multiselected then we get the selected items for the selected attr
       if (dragSettings.multiSelect) {
-        $.each(dragSettings.selected, function (indexOfItem) {
+        $.each(dragSettings.selected, function (index, indexOfItem) {
           dragItems.push(dragModelValue[indexOfItem]);
         });
 
